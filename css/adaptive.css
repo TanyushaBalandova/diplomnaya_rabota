@@ -1,0 +1,62 @@
+/* Адаптив для планшетов и смартфонов */
+@media (max-width: 1024px) {
+    .main__title {
+        font-size: 48px;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    .delivery__title,
+    .contacts__title {
+        font-size: 28px;
+    }
+
+    .footer__sections {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .main__title {
+        font-size: 36px;
+    }
+
+    .main__content {
+        gap: 30px;
+    }
+
+    /* Секции карточек товаров и доставки */
+    .section__cards,
+    .delivery__cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Контакты */
+    .contacts__wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Футер */
+    .footer__sections {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+

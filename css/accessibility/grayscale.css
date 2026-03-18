@@ -1,0 +1,10 @@
+/* Ч/Б режим */
+.grayscale main,
+.grayscale header,
+.grayscale footer {
+    filter: grayscale(100%);
+}
+
+.grayscale .a11y-widget {
+    filter: none !important;
+}

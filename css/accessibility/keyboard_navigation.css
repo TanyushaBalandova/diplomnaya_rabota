@@ -1,0 +1,26 @@
+/* Стиль для фокуса клавиатуры */
+:focus-visible {
+    outline: 3px solid #007BFF;
+    outline-offset: 3px;
+}
+
+/* Скрываем ссылку "Перейти к основному контенту" */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #ff0000;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+.products:focus {
+    border-color: #ff0000;
+    border-width: 3px;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стройматериалы</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/accessibility/a11y-widget.css" />
+  <link rel="stylesheet" href="./css/accessibility/high-contrast.css" />
+  <link rel="stylesheet" href="./css/accessibility/grayscale.css" />
+  <link rel="stylesheet" href="./css/accessibility/keyboard_navigation.css" />
+</head>
+
+<body>
+
+  <!-- Кнопка для пропуска навигации -->
+
+  <a href="#main-content" class="skip-link" tabindex="0">Перейти к основному контенту</a>
+
+  <!-- Навигация и логотип -->
+  <header class="header">
+    <div class="container container--header">
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#!" class="logo" aria-label="Логотип магазина Стройматериалы">
+          <img src="./img/logo/logo.svg" alt="Логотип магазина Стройматериалы" />
+        </a>
+
+
+        <!-- Навигация -->
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#home" class="nav-list__link nav-list__link_active" aria-current="page">ГЛАВНАЯ</a>
+          </li>
+
+          <li class="nav-list__item">
+            <a href="#products" class="nav-list__link nav-list__link_active">ТОВАРЫ</a>
+          </li>
+
+          <li class="nav-list__item">
+            <a href="#delivery" class="nav-list__link nav-list__link_active">ДОСТАВКА</a>
+          </li>
+
+          <li class="nav-list__item">
+            <a href="#contacts" class="nav-list__link nav-list__link_active">КОНТАКТЫ</a>
+          </li>
+        </ul>
+
+        <!-- Иконка корзины -->
+        <div class="cart">
+          <a href="cart.html" aria-label="Корзина покупок">
+            <img src="./img/icons/cart.svg" alt="Корзина" class="cart-icon">
+            <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+          </a>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основа сайта -->
+  <main class="main" id="main-content" role="main">
+
+    <!-- Раздел Главная -->
+    <section class="main-hero" aria-labelledby="home">
+      <div class="container">
+        <div class="main__content">
+          <h1 class="main__title" id="home">
+            Оптовая и розничная продажа напрямую от производителя
+          </h1>
+
+          <a href="#products" class="button button--huge">Перейти к товарам</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел Товары-->
+    <section class="section" aria-labelledby="products">
+      <div class="container">
+        <h2 class="section__title" id="products">ТОВАРЫ</h2>
+
+        <!-- Скобяные изделия -->
+        <section aria-labelledby="fasteners-heading" class="section">
+          <h3 class="section__header title-2" id="fasteners-heading">Скобяные изделия</h3>
+
+          <div class="section__cards">
+
+            <!-- 1 карточка -->
+            <article class="card" aria-labelledby="product-1-title">
+              <img src="./img/cards/card1.jpg" alt="Навесной замок с ключом." />
+              <h3 id="product-1-title" class="card--title">Навесной замок с ключом</h3>
+              <p class="card--price" aria-label="Цена: 360 рублей за штуку">360 ₽/шт.</p>
+              <button class="button--card"
+                aria-label="Добавить в корзину: навесной замок с ключом, цена 360 рублей">ДОБАВИТЬ В КОРЗИНУ</button>
+            </article>
+
+            <!-- 2 карточка -->
+            <article class="card" aria-labelledby="product-2-title">
+              <img src="./img/cards/card2.jpg" alt="Дверной доводчик." />
+              <h3 id="product-2-title" class="card--title">Дверной доводчик</h3>
+              <p class="card--price" aria-label="Цена: 1710 рублей за штуку">1 710 ₽/шт.</p>
+              <button class="button--card" aria-label="Добавить в корзину: дверной доводчик, цена 1710 рублей">ДОБАВИТЬ
+                В КОРЗИНУ</button>
+            </article>
+
+            <!-- 3 карточка -->
+            <article class="card" aria-labelledby="product-3-title">
+              <img src="./img/cards/card3.jpg" alt="Петля для металлических дверей" />
+              <h3 id="product-3-title" class="card--title">Петля для металлических дверей</h3>
+              <p class="card--price" aria-label="Цена: 117 рублей за штуку">117 ₽/шт.</p>
+              <button class="button--card"
+                aria-label="Добавить в корзину: петлю для металлических дверей, цена 117 рублей">ДОБАВИТЬ В
+                КОРЗИНУ</button>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Лакокрасочные материалы -->
+        <section class="section" aria-labelledby="paint-heading">
+
+          <h3 class="section__header title-2" id="paint-heading">Лакокрасочные материалы</h3>
+
+          <div class="section__cards">
+
+            <!-- 1 карточка -->
+            <article class="card" aria-labelledby="product-4-title">
+              <img src="./img/cards/card4.png" alt="Аэрозольная краска Tytan." />
+              <h3 id="product-4-title" class="card--title">Аэрозольная краска Tytan</h3>
+              <p class="card--price" aria-label="Цена: 378 рублей за штуку">378 ₽/шт.</p>
+
+              <button class="button--card"
+                aria-label="Добавить в корзину: аэрозольную краску Tytan, цена 378 рублей.">ДОБАВИТЬ В
+                КОРЗИНУ</button>
+            </article>
+
+            <!-- 2 карточка -->
+            <article class="card" aria-labelledby="product-5-title">
+              <img src="./img/cards/card5.png" alt="Лак акриловый универсальный." />
+              <h3 id="product-5-title" class="card--title">Лак акриловый универсальный</h3>
+              <p class="card--price" aria-label="Цена: 278 рублей за штуку">278 ₽/шт.</p>
+
+              <button class="button--card"
+                aria-label="Добавить в коризину: лак акриловый универсальный, цена 278 рублей.">ДОБАВИТЬ В
+                КОРЗИНУ</button>
+            </article>
+
+            <!-- 3 карточка -->
+            <article class="card" aria-labelledby="product-6-title">
+              <img src="./img/cards/card6.jpg" alt="Акриловая краска для стен и потолков." />
+              <h3 id="product-6-title" class="card--title">Акриловая краска для стен и потолков</h3>
+              <p class="card--price" aria-label="Цена: 4283 рублей за штуку">4 283 ₽/шт.</p>
+
+              <button class="button--card"
+                aria-label="Добавить в корзину: акриловую краску для стен, цена 4283 рублей.">ДОБАВИТЬ
+                В КОРЗИНУ</button>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Стекло -->
+        <section class="section" aria-labelledby="glass-heading">
+
+
+          <h3 class="section__header title-2" id="glass-heading">Стекло</h3>
+
+          <div class="section__cards">
+
+            <!-- 1 карточка -->
+
+            <article class="card" aria-labelledby="product-7-title">
+              <img src="./img/cards/card7.jpg" alt="Стекло листовое (оконное)" />
+              <h3 id="product-7-title" class="card--title">Стекло листовое (оконное)</h3>
+              <p class="card--price" aria-label="Цена: 2160 рублей за лист.">2 160 ₽/лист.</p>
+
+              <button class="button--card"
+                aria-label="Добавить в корзину: стекло листовое (оконное), цена 2160 рублей.">ДОБАВИТЬ В
+                КОРЗИНУ</button>
+            </article>
+
+            <!-- 2 карточка -->
+            <article class="card" aria-labelledby="product-8-title">
+              <img src="./img/cards/card8.jpg" alt="Стекло закалённое." />
+              <h3 id="product-8-title" class="card--title">Стекло закалённое</h3>
+              <p class="card--price" aria-label="Цена: 1972 рублей за один квадратный метр.">1 972 ₽/м².</p>
+
+              <button class="button--card"
+                aria-label="Добавить в корзину: стекло закалённое, цена 1972 рублей.">ДОБАВИТЬ В
+                КОРЗИНУ</button>
+            </article>
+
+            <!-- 3 карточка -->
+            <article class="card" aria-labelledby="product-9-title">
+              <img src="./img/cards/card9.jpg" alt="Стекло узорчатое (декоративное)" />
+              <h3 id="product-9-title" class="card--title">Стекло узорчатое (декоративное)</h3>
+              <p class="card--price" aria-label="Цена: 2300 рублей за один квадратный метр.">2 300 ₽/м².</p>
+
+              <button class="button--card"
+                aria-label="Добавить в корзину: стекло узорчатое (декоративное), цена 2300 рублей.">ДОБАВИТЬ В
+                КОРЗИНУ</button>
+            </article>
+          </div>
+
+        </section>
+    </section>
+
+    <!-- Раздел Доставка -->
+    <section class="delivery" aria-labelledby="delivery">
+      <div class="container">
+        <h2 class="delivery__title" id="delivery">СПОСОБ ДОСТАВКИ</h2>
+        <div class="delivery__cards">
+
+          <!-- 1 карточка -->
+          <article class="delivery-card" tabindex="0">
+            <img src="./img/delivery/delivery_warehouses.svg" alt="Иконка самовывоз со склада">
+            <h3 class="delivery-card__title">Самовывоз со склада</h3>
+            <p class="delivery-card__text">
+              Заберите заказ самостоятельно в удобное время.
+              Адрес склада и график работы указаны в разделе «Контакты».
+            </p>
+          </article>
+
+          <!-- 2 карточка -->
+          <article class="delivery-card" tabindex="0">
+            <img src="./img/delivery/delivery_citys.svg" alt="Иконка доставки по городу">
+            <h3 class="delivery-card__title">Доставка по городу</h3>
+            <p class="delivery-card__text">
+              Сроки от 1 до 3 рабочих дней с момента оформления заказа.
+              Доступна доставка «день в день» при наличии свободного транспорта.
+            </p>
+          </article>
+
+          <!-- 3 карточка -->
+          <article class="delivery-card" tabindex="0">
+            <img src="./img/delivery/delivery_regions.svg" alt="Иконка доставки в регионы">
+            <h3 class="delivery-card__title">Доставка в регионы</h3>
+            <p class="delivery-card__text">
+              Отправляем грузы по всей России.
+              Срок доставки зависит от удалённости региона.
+              Рассчитаем точную стоимость и сроки при оформлении заказа.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел Контакты -->
+    <section class="contacts" aria-labelledby="contacts">
+      <div class="container">
+        <h2 class="contacts__title" id="contacts">КОНТАКТЫ</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__info" role="list">
+
+            <!-- Адрес -->
+            <div class="contacts__item" role="listitem">
+              <img src="./img/icons/map-pin.svg" alt="Иконка адреса" />
+              <div>
+                <h3 class="contacts__item-title">Адрес</h3>
+                <p class="contacts__item-text">431611, Республика Мордовия, Ромодановский район, село Малые Березники,
+                  Дорожная ул, д. 37</p>
+              </div>
+            </div>
+
+            <!-- Телефон -->
+            <div class="contacts__item" role="listitem">
+              <img src="./img/icons/phone.svg" alt="Иконка номера телефона" />
+              <div>
+                <h3 class="contacts__item-title">Телефон</h3>
+                <a href="tel:+79271798899" class="contacts__link" tabindex="0"
+                  aria-label="Позвонить: +7 (927) 179-88-99">+7 (927) 179-88-99</a>
+              </div>
+            </div>
+
+            <!-- Режим работы -->
+            <div class="contacts__item" role="listitem">
+              <img src="./img/icons/clock.svg" alt="Иконка режима работы">
+              <div>
+                <h3 class="contacts__item-title">Режим работы</h3>
+                <p class="contacts__item-text">Пн-Пт: 8:00-17:00</p>
+                <p class="contacts__item-text"> Сб - Вс: выходной</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts__map">
+            <h3 id="map-title" class="contacts__map-title">Местоположение на карте</h3>
+            <div class="map-container" tabindex="0" role="region" aria-labelledby="map-title"
+              aria-describedby="map-description">
+              <iframe title="Местоположение на карте"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.763606623453!2d45.45753079042308!3d54.378826201975265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4144716a4edfc5f3%3A0x37d7dd5fbf87eba6!2z0JTQvtGA0L7QttC90LDRjyDRg9C7Liwg0JzQsNC70YvQtSDQkdC10YDQtdC30L3QuNC60LgsINCg0LXRgdC_LiDQnNC-0YDQtNC-0LLQuNGPLCA0MzE2MTA!5e0!3m2!1sru!2sru!4v1771259181572!5m2!1sru!2sru"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <p id="map-description" class="sr-only">
+                Интерактивная карта с расположением нашего офиса. Для навигации по карте используйте клавиши управления.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Раздел Футер -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__sections">
+
+          <!-- Раздел "ПОКУПАТЕЛЯМ" -->
+          <div class="footer__section">
+            <h3 class="footer__section-title">ПОКУПАТЕЛЯМ</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#home" class="footer__nav-link">ГЛАВНАЯ</a></li>
+              <li><a href="#products" class="footer__nav-link">ТОВАРЫ</a></li>
+              <li><a href="#delivery" class="footer__nav-link">ДОСТАВКА</a></li>
+              <li><a href="#contacts" class="footer__nav-link">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+
+          <!-- Раздел "КОНТАКТЫ" -->
+          <div class="footer__section">
+            <h3 class="footer__section-title">КОНТАКТЫ</h3>
+            <p class="footer__contact-text">Телефон: <a href="tel:+79271798899"
+                aria-label="Позвонить: +7 (927) 179-88-99">+7 (927) 179-88-99</a></p>
+            <p class="footer__contact-text">Email: <a href="mailto:info@example.com"
+                aria-label="Написать на почту: tanyabalandova@yandex.ru">tanyabalandova@yandex.ru</a></p>
+          </div>
+
+          <!-- Раздел "О МАГАЗИНЕ" -->
+          <div class="footer__section">
+            <h3 class="footer__section-title">О МАГАЗИНЕ</h3>
+            <p class="footer__contact-text">Режим работы:</p>
+            <p class="footer__contact-text">Пн-Пт: 8:00-17:00</p>
+            <p class="footer__contact-text">Сб-Вс: выходной</p>
+            <p class="footer__contact-text">Адрес: Республика Мордовия, село Малые Березники, ул. Дорожная, д. 37</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Виджет доступности -->
+  <div class="a11y-widget">
+    <button class="a11y-toggle" aria-label="Открыть панель доступности" aria-expanded="false" aria-controls="a11y-panel">
+      👁
+    </button>
+
+    <div class="a11y-panel" aria-hidden="true" id="a11y-panel">
+      <h3>Доступность</h3>
+
+      <!-- Размер текста -->
+      <div class="a11y-group">
+        <p>Размер текста:</p>
+        <button id="font-increase">A+</button>
+        <button id="font-reset">A</button>
+        <button id="font-decrease">A-</button>
+      </div>
+
+      <!-- Контраст -->
+      <div class="a11y-group">
+        <p>Контраст:</p>
+        <button id="contrast-toggle">Высокий контраст</button>
+      </div>
+
+      <!-- Ч/Б режим -->
+      <div class="a11y-group">
+        <p>Цвет:</p>
+        <button id="grayscale-toggle">Ч/Б режим</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Подключение js файла -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

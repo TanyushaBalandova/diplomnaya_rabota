@@ -1,0 +1,405 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+html {
+    font-size: 16px;
+    transition: font-size 0.2s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+/* Стили для навигации сайта */
+
+
+.header {
+    padding: 30px 0;
+    background-color: #000;
+}
+
+.header a {
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.container--header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 10px;
+
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 20px;
+    font-size: 18px;
+}
+
+
+.nav-list__link_active:hover {
+    color: #fdc700;
+
+}
+
+.phone {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+
+}
+
+.phone__content {
+    color: black;
+    font-size: 16px;
+
+}
+
+/* Отступы для разделов */
+
+.section {
+    padding: 80px 0;
+}
+
+/* Главный экран */
+
+.main-hero {
+    min-height: 90vh;
+    background-image: url("../img/header/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #fff;
+}
+
+.main__content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main__title {
+    font-size: 3.75rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.button {
+    background: #fdc700;
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button--huge {
+    padding: 18px 40px;
+    font-size: 1.25rem;
+}
+
+.button:hover {
+    background: #e6b800;
+}
+
+
+/* Стили для раздела Товары */
+
+.section__title {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.section__header {
+    margin-bottom: 67px;
+}
+
+.section__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.title-2 {
+    font-size: 1.75rem;
+}
+
+.card {
+    border: 1px solid #000000;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card--price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.card--title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.button--card {
+    background: rgb(253, 199, 0);
+    border: none;
+    border-radius: 8px;
+    color: black;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.button--card:hover {
+    background: #e6b800;
+}
+
+/* Стили для раздела Доставка */
+
+.delivery {
+    padding: 100px 0;
+    background-image: url("../img/header/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.delivery__title {
+    font-size: 2rem;
+    margin-bottom: 70px;
+    color: #fdc700;
+}
+
+.delivery__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.delivery-card {
+    background: #fdc700;
+    padding: 40px 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.delivery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.delivery-card__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.delivery-card__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Раздел Контакты */
+.contacts {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.contacts__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contacts__info {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contacts__item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.contacts__item-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.contacts__item-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contacts__map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contacts__map-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+
+/* Стили для футера */
+.footer {
+    background-image: url("../img/header/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer__section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer__section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fdc700;
+}
+
+.footer__nav-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.footer__nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.footer__nav-link:hover {
+    color: #fdc700;
+}
+
+.footer__contact-text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Стиль для иконки Корзина */
+
+.cart-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+    filter: brightness(0.8) saturate(1.2);
+    transition: filter 0.3s ease;
+}
+
+.cart-icon:hover {
+    filter: hue-rotate(45deg) brightness(1.1) saturate(2);
+}
+
+.cart-count {
+    font-size: 25px;
+}

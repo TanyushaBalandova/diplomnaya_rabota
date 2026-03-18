@@ -1,0 +1,93 @@
+/* Контрастность */
+.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Весь текст */
+.high-contrast p,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast span,
+.high-contrast a {
+    color: #fff !important;
+}
+.high-contrast .button--huge{
+    background: #c99a00 !important;
+}
+
+/* Желтые ссылки */
+.high-contrast a {
+    color: #ffff00 !important;
+}
+
+/* Раздел товары */
+
+/* Карточки товаров */
+.high-contrast .card {
+    background: #000 !important;
+    border: 2px solid #fff !important;
+}
+
+/* Названия товаров */
+.high-contrast .card--title {
+    color: #fff !important;
+}
+
+/* Цены */
+.high-contrast .card--price {
+    color: #00ff00 !important;
+}
+
+/* Кнопки */
+.high-contrast button {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+/* Раздел Контакты */
+
+.high-contrast .contacts {
+    background-color: #000 !important;
+}
+
+/* Весь текст внутри контактов */
+.high-contrast .contacts p,
+.high-contrast .contacts h2,
+.high-contrast .contacts h3,
+.high-contrast .contacts a {
+    color: #fff !important;
+}
+
+/* Иконки  */
+.high-contrast .contacts img {
+    filter: brightness(0) invert(1);
+}
+
+/* Картинки на сайте */
+
+.high-contrast img {
+    filter: brightness(0.8) contrast(1.2);
+}
+
+/* Раздел доставка */
+
+.high-contrast .delivery-card{
+    background: #c99a00 !important;
+}
+
+
+/* Виджет */
+.high-contrast .a11y-panel {
+    background: #000 !important;
+    border: 2px solid #fff !important;
+}
+
+/* Кнопка-глаз */
+.high-contrast .a11y-toggle {
+    background: #000 !important;
+    border: 2px solid #fff !important;
+}
+
