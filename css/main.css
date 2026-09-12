@@ -11,13 +11,14 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     overflow-x: hidden;
+    line-height: 1.5;
 }
 
 /* Стили для навигации сайта */
 
 
 .header {
-    padding: 30px 0;
+    padding: 20px 0; 
     background-color: #000;
 }
 
@@ -28,7 +29,7 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .container--header {
@@ -43,15 +44,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 30px;
-    margin-bottom: 10px;
-
+    column-gap: 20px;
+    margin-bottom: 0; 
 }
 
 .nav-list {
     display: flex;
-    column-gap: 20px;
-    font-size: 18px;
+    column-gap: 24px;
+    font-size: 16px; 
 }
 
 
@@ -83,30 +83,29 @@ body {
 /* Главный экран */
 
 .main-hero {
-    min-height: 90vh;
+    min-height: 75vh; 
     background-image: url("../img/header/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
     color: #fff;
 }
 
 .main__content {
-    max-width: 800px;
+    max-width: 720px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    gap: 32px; 
 }
 
 .main__title {
-    font-size: 3.75rem;
-    line-height: 1.2;
+    font-size: 2.75rem;
+    line-height: 1.15;
     font-weight: 800;
 }
 
@@ -120,40 +119,46 @@ body {
 }
 
 .button--huge {
-    padding: 18px 40px;
-    font-size: 1.25rem;
+    padding: 16px 32px;
+    font-size: 1.0625rem; 
 }
 
 .button:hover {
     background: #e6b800;
 }
 
+.logo img {
+    max-width: 140px;
+    height: auto;
+    display: block;
+}
+
 
 /* Стили для раздела Товары */
 
 .section__title {
-    margin-bottom: 15px;
-    font-size: 2rem;
+    margin-bottom: 12px;
+    font-size: 1.75rem;
 }
 
 .section__header {
-    margin-bottom: 67px;
+    margin-bottom: 40px;
 }
 
 .section__cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 24px;
 }
 
 .title-2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .card {
-    border: 1px solid #000000;
+    border: 1px solid #000;
     border-radius: 12px;
-    padding: 20px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,26 +166,25 @@ body {
     transition: 0.3s;
     background: #fff;
 }
-
 .card img {
     width: 100%;
-    height: 250px;
-    margin-bottom: 20px;
+    height: 200px; 
+    margin-bottom: 16px;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .card--price {
-    font-size: 1.25rem;
+    font-size: 1.125rem; /* было 1.25rem */
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .card--title {
-    font-size: 1.125rem;
+    font-size: 1rem; /* было 1.125rem */
     font-weight: 500;
-    margin-bottom: 20px;
-
+    margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 .button--card {
@@ -189,11 +193,11 @@ body {
     border-radius: 8px;
     color: black;
     display: inline-block;
-    padding: 12px 20px;
-    font-size: 1rem;
+    padding: 10px 18px;
+    font-size: 0.9375rem; /* 15px */
     font-weight: 700;
+    cursor: pointer;
 }
-
 .button--card:hover {
     background: #e6b800;
 }
@@ -201,7 +205,7 @@ body {
 /* Стили для раздела Доставка */
 
 .delivery {
-    padding: 100px 0;
+    padding: 72px 0;
     background-image: url("../img/header/bg.jpg");
     background-size: cover;
     background-position: center;
@@ -210,20 +214,20 @@ body {
 }
 
 .delivery__title {
-    font-size: 2rem;
-    margin-bottom: 70px;
+    font-size: 1.75rem; /* было 2rem */
+    margin-bottom: 48px; /* было 70px */
     color: #fdc700;
 }
 
 .delivery__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
 }
 
 .delivery-card {
     background: #fdc700;
-    padding: 40px 25px;
+    padding: 32px 24px; /* было 40px 25px */
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -237,91 +241,89 @@ body {
 }
 
 .delivery-card img {
-    width: 100px;
-    height: 100px;
+    width: 72px; /* было 100px */
+    height: 72px;
     object-fit: contain;
-    margin-bottom: 25px;
-}
-
-.delivery-card__title {
-    font-size: 20px;
     margin-bottom: 20px;
 }
 
+.delivery-card__title {
+    font-size: 1.125rem; /* 18px */
+    margin-bottom: 14px;
+}
+
 .delivery-card__text {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.55;
     font-weight: 500;
 }
 
 /* Раздел Контакты */
 .contacts {
-    padding: 100px 0;
-    background-color: #ffffff;
+    padding: 72px 0;
+    background-color: #fff;
 }
 
 .contacts__title {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 70px;
+    font-size: 1.75rem;
+    margin-bottom: 48px;
 }
 
 .contacts__wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .contacts__info {
     flex: 1;
-    min-width: 280px;
+    min-width: 260px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 28px;
 }
 
 .contacts__item {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 16px;
 }
 
 .contacts__item img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .contacts__item-title {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 1.0625rem; /* 17px */
+    margin-bottom: 6px;
 }
 
 .contacts__item-text {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .contacts__map {
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .contacts__map-title {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.0625rem;
+    margin-bottom: 16px;
 }
 
-.map-placeholder {
+.map-container {
     width: 100%;
-    height: 300px;
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #777;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 
@@ -331,76 +333,51 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 0;
+     padding: 40px 0;
     color: #fff;
     text-align: center;
-}
-
-.footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
 }
 
 .footer__sections {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
     text-align: left;
 }
 
-.footer__section {
-    flex: 1;
-    min-width: 200px;
-}
-
 .footer__section-title {
-    font-size: 20px;
+    font-size: 1.0625rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     color: #fdc700;
 }
 
 .footer__nav-list {
-    list-style: none;
-    padding: 0;
-    font-size: 16px;
+    font-size: 0.9375rem;
 }
 
 .footer__nav-link {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-    transition: color 0.3s;
-}
-
-.footer__nav-link:hover {
-    color: #fdc700;
+    margin-bottom: 8px;
 }
 
 .footer__contact-text {
-    font-size: 16px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
 
-/* Стиль для иконки Корзина */
-
+/* Корзина */
 .cart-icon {
-    width: 80px;
-    height: 80px;
-    margin-right: 8px;
+    width: 44px; /* было 80px — это главная проблема огромного вида */
+    height: 44px;
+    margin-right: 6px;
     filter: brightness(0.8) saturate(1.2);
     transition: filter 0.3s ease;
 }
 
-.cart-icon:hover {
-    filter: hue-rotate(45deg) brightness(1.1) saturate(2);
-}
-
 .cart-count {
-    font-size: 25px;
+    font-size: 17px; /* было 25px */
+    vertical-align: top;
 }
