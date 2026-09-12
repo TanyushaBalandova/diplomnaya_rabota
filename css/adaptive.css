@@ -1,53 +1,33 @@
 /* Планшеты (<= 992px) */
 @media (max-width: 992px) {
-    .main__title {
-        font-size: 2.75rem;
-    }
+    .main__title { font-size: 2.25rem; }
 
     .section,
     .delivery,
-    .contacts {
-        padding: 60px 0;
-    }
+    .contacts { padding: 56px 0; }
 
     .delivery__title,
     .contacts__title,
-    .section__title {
-        margin-bottom: 40px;
-    }
+    .section__title { margin-bottom: 32px; }
 
-    .section__header {
-        margin-bottom: 40px;
-    }
+    .section__header { margin-bottom: 32px; }
 
-    .delivery__cards {
-        gap: 25px;
-    }
+    .delivery__cards { gap: 20px; }
 
-    .contacts__wrapper {
-        gap: 40px;
-    }
-
-    .footer__sections {
-        gap: 30px;
-    }
+    .contacts__wrapper { gap: 32px; }
 }
 
 /* Телефоны (<= 768px) */
 @media (max-width: 768px) {
-    html {
-        font-size: 15px;
-    }
+    html { font-size: 15px; }
 
-    .header {
-        padding: 15px 0;
-    }
+    .header { padding: 14px 0 18px; }
 
     .nav {
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 15px;
-        row-gap: 15px;
+        column-gap: 12px;
+        row-gap: 16px;
     }
 
     .nav-list {
@@ -55,118 +35,94 @@
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-        column-gap: 15px;
-        row-gap: 10px;
-        font-size: 15px;
+        column-gap: 14px;
+        row-gap: 8px;
+        font-size: 14px;
     }
 
-    .logo img {
-        max-width: 120px;
-        height: auto;
-    }
+    .logo img { max-width: 90px; }
 
-    /* Корзина меньше */
     .cart-icon {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
         margin-right: 4px;
     }
 
-    .cart-count {
-        font-size: 16px;
-    }
+    .cart-count { font-size: 14px; }
 
     /* Hero */
     .main-hero {
-        min-height: 70vh;
+        min-height: 60vh;
         padding: 40px 0;
     }
 
-    .main__content {
-        gap: 30px;
-    }
+    .main__content { gap: 24px; }
 
     .main__title {
-        font-size: 2rem;
+        font-size: 1.75rem;
         line-height: 1.25;
     }
 
     .button--huge {
-        padding: 14px 28px;
-        font-size: 1rem;
+        padding: 13px 26px;
+        font-size: 0.9375rem;
     }
 
     /* Секции */
     .section,
     .delivery,
-    .contacts {
-        padding: 40px 0;
-    }
+    .contacts { padding: 40px 0; }
 
     .section__title,
     .delivery__title,
     .contacts__title {
-        font-size: 1.5rem;
-        margin-bottom: 25px;
+        font-size: 1.375rem;
+        margin-bottom: 24px;
     }
 
-    .section__header {
-        margin-bottom: 25px;
+    .section__header { 
+        margin-bottom: 20px;
+        margin-top: 8px;
     }
 
-    .title-2 {
-        font-size: 1.25rem;
-    }
+    .title-2 { font-size: 1.125rem; }
 
     /* Карточки товаров */
     .section__cards {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
 
-    .card {
-        padding: 15px;
-    }
+    .card { padding: 14px; }
 
     .card img {
-        height: 200px;
-        margin-bottom: 15px;
-    }
-
-    .card--title {
-        font-size: 1rem;
+        height: 180px;
         margin-bottom: 12px;
     }
 
-    .card--price {
-        font-size: 1.125rem;
-    }
+    .card--title { font-size: 0.9375rem; margin-bottom: 10px; }
+    .card--price { font-size: 1rem; }
 
     /* Доставка */
     .delivery__cards {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
 
-    .delivery-card {
-        padding: 25px 20px;
-    }
+    .delivery-card { padding: 24px 18px; }
 
     .delivery-card img {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 15px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 14px;
     }
 
-    .delivery-card__title {
-        font-size: 18px;
-        margin-bottom: 12px;
-    }
+    .delivery-card__title { font-size: 1rem; margin-bottom: 10px; }
 
     /* Контакты */
     .contacts__wrapper {
         flex-direction: column;
-        gap: 30px;
+        gap: 28px;
     }
 
     .contacts__info,
@@ -175,125 +131,71 @@
         width: 100%;
     }
 
-    .contacts__item img {
-        width: 32px;
-        height: 32px;
-    }
+    .contacts__item img { width: 28px; height: 28px; }
+    .contacts__item-title { font-size: 1rem; }
 
-    .contacts__item-title {
-        font-size: 17px;
-    }
-
-    /* Карта — адаптивная */
-    .map-container {
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        border-radius: 12px;
-    }
-
-    .map-container iframe {
-        width: 100% !important;
-        height: 300px !important;
-        display: block;
-    }
+    .map-container { height: 260px; }
 
     /* Футер */
-    .footer {
-        padding: 30px 0;
-    }
+    .footer { 
+        padding: 28px 0;
+        padding-bottom: 80px;
+     }
 
     .footer__sections {
         flex-direction: column;
-        gap: 25px;
+        gap: 22px;
         text-align: center;
     }
 
-    .footer__section {
-        min-width: 0;
-        width: 100%;
-    }
-
-    .footer__section-title {
-        font-size: 17px;
-    }
+    .footer__section { min-width: 0; width: 100%; }
+    .footer__section-title { font-size: 1rem; }
 }
 
 /* Маленькие телефоны (<= 480px) */
 @media (max-width: 480px) {
-    html {
-        font-size: 14px;
-    }
+    html { font-size: 14px; }
 
-    .container {
-        padding: 0 12px;
-    }
+    .container { padding: 0 14px; }
 
-    .main__title {
-        font-size: 1.625rem;
-    }
+    .main__title { font-size: 1.5rem; }
 
     .button--huge {
-        padding: 12px 22px;
-        font-size: 0.95rem;
+        padding: 12px 20px;
+        font-size: 0.875rem;
         width: 100%;
-        max-width: 280px;
+        max-width: 260px;
     }
 
-    .nav-list {
-        font-size: 14px;
-        column-gap: 12px;
-    }
+    .nav-list { font-size: 13px; column-gap: 10px; }
 
     .section__title,
     .delivery__title,
-    .contacts__title {
-        font-size: 1.375rem;
-    }
+    .contacts__title { font-size: 1.25rem; }
 
-    .card img {
-        height: 180px;
-    }
+    .card img { height: 170px; }
 
     .button--card {
         width: 100%;
-        padding: 12px 16px;
-        font-size: 0.9rem;
+        padding: 10px 14px;
+        font-size: 0.875rem;
     }
 
-    .contacts__item {
-        gap: 14px;
-    }
-
-    .map-container iframe {
-        height: 240px !important;
-    }
+    .map-container { height: 220px; }
 }
 
-/* Горизонтальная ориентация телефонов — компактный hero */
+/* Горизонтальная ориентация */
 @media (max-width: 768px) and (orientation: landscape) {
-    .main-hero {
-        min-height: auto;
-        padding: 50px 0;
-    }
-
-    .main__title {
-        font-size: 1.75rem;
-    }
+    .main-hero { min-height: auto; padding: 40px 0; }
+    .main__title { font-size: 1.5rem; }
 }
 
-/* Улучшение для touch-устройств */
+/* Touch-устройства */
 @media (hover: none) {
     .delivery-card:hover {
         transform: none;
         box-shadow: none;
     }
-
-    .button:hover {
-        background: #fdc700;
-    }
-
-    .button--card:hover {
-        background: rgb(253, 199, 0);
-    }
+    .button:hover { background: #fdc700; }
+    .button--card:hover { background: rgb(253, 199, 0); }
 }
